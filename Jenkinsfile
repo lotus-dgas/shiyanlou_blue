@@ -4,7 +4,7 @@ pipeline {
     stage('git') {
       steps {
         dir(path: '/home/shiyanlou/Code') {
-          git(url: 'git@github.com:lotus-dgas/shiyanlou_blue.git', branch: 'main', credentialsId: 'a6a38475-9a40-49a1-adae-aafda9b64615')
+          git(url: 'git@github.com:lotus-dgas/shiyanlou_blue.git', branch: 'main', credentialsId: '	b35067a1-3ef5-47da-b256-9cd7d0979e95')
         }
 
       }
