@@ -19,7 +19,7 @@ pipeline {
 
     stage('run') {
       steps {
-        sh 'python3 app.py'
+        sh 'uwsgi --http :8001 --wsgi-file app.py --callable app --daemonize true '
       }
     }
 
