@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git') {
       steps {
-        dir(path: '/data') {
+        dir(path: '/var/jenkins_home/workspace') {
           git(url: 'git@github.com:lotus-dgas/shiyanlou_blue.git', branch: 'main', credentialsId: '69c3b4ef-bc23-4ad3-9d68-a43e0d5293b5')
         }
 
